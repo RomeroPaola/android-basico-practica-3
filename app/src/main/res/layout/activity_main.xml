@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:label="@string/LayoutPractice"
+    android:orientation="vertical"
+    android:weightSum="3"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:weightSum="3"
+        android:layout_height="0dp">
+    <TextView
+        android:id="@+id/ancho"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/numero1"
+        style="@style/Font"
+        android:layout_weight="1"
+        android:background="#ff0000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/numero2"
+        style="@style/Font"
+        android:layout_weight="1"
+        android:background="#00ff00"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/numero3"
+            style="@style/Font"
+            android:layout_weight="1"
+            android:background="#0000ff"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+       >
+
+        <TextView
+            android:layout_width="137dp"
+            android:layout_height="140.44dp"
+            style="@style/Font"
+            android:layout_gravity="center"
+            android:background="#ff0000"
+            android:text="@string/numero1" />
+
+        <TextView
+            android:layout_width="68.5dp"
+            android:layout_height="73.22dp"
+            android:layout_gravity="end"
+            android:background="#00ff00"
+            android:layout_marginEnd="102.75dp"
+            android:layout_marginRight="102.75dp"
+            android:text="@string/numero2"
+            style="@style/Font"
+          />
+
+        <TextView
+            android:layout_width="68.5dp"
+            android:layout_height="73.22dp"
+            android:layout_gravity="start"
+            android:background="#0000ff"
+            android:text="@string/numero3"
+            style="@style/Font"
+            android:layout_marginStart="102.75dp"
+            android:layout_marginTop="130.83dp"
+            android:layout_marginLeft="102.75dp" />
+
+    </FrameLayout>
+
+
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="3">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/numero1"
+            style="@style/Font"
+            android:layout_weight="1"
+            android:background="#ff0000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/numero2"
+            style="@style/Font"
+            android:background="#00ff00"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/numero3"
+            style="@style/Font"
+            android:background="#0000ff"/>
+    </LinearLayout>
+</LinearLayout>
+
